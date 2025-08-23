@@ -10,3 +10,27 @@ let passSuggestion2 = document.getElementById("btnPasswordPlaceholder2")
 
 console.log(passSuggestion1)
 console.log(passSuggestion2)
+
+function generatePassword(){
+
+    // based on resource
+    //https://java2blog.com/fill-array-with-random-numbers-javascript/
+
+    const randomChars = Array.from(
+    { length: 15 }, // Specify lenfgth of charachters || total characters.length
+    () => characters[Math.floor(Math.random() * characters.length)]
+    );
+
+
+    return console.log(randomChars.join(""))
+
+}
+
+
+
+
+generatePassword()
+
+
+
+
