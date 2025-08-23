@@ -1,4 +1,26 @@
 body{
 
     margin: 0;
+    margin-left: 52px;
+}
+
+#btnGenPassword{
+
+    width: 191px;
+    height: 42px;
+    
+
+}
+
+#btnPasswordPlaceholder{
+
+    width: 191px;
+    height: 42px;
+    
+
+}
+
+.container1{
+
+    margin-bottom: 100px;
 }
