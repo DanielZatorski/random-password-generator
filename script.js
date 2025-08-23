@@ -55,4 +55,7 @@ slider.addEventListener("input", function sliderValue() {
         
 
 
-
+//copying content of the placeholder into clipboard
+function copyPass(buttonId) {
+  let button = document.getElementById(buttonId);
+  navigator.clipboard.writeText(button.innerText)}
