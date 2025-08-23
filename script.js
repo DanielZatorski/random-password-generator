@@ -21,6 +21,14 @@ function generatePassword(){
     () => characters[Math.floor(Math.random() * characters.length)]
     );
 
+    //ALTERNATIVELY
+    //let let randomChars = [];
+    //for (let i = 0; i < characters.length; i++) {
+    //let randomIndex = Math.floor(Math.random() * characters.length);
+    //randomChars.push(characters[randomIndex]);
+    //}
+
+
 
     return console.log(randomChars.join(""))
 
