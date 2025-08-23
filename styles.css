@@ -2,33 +2,131 @@ body{
 
     margin: 0;
     margin-left: 52px;
+    background-color: #1F2937;
+    font-family: 'Karla';
 }
+
+.white-text {
+  color: white;
+  font: bold;
+  font-size: 40px;
+  letter-spacing: -3px;
+}
+
+.purple-text {
+  color: #8B5CF6; 
+  font-size: 40px;
+  letter-spacing: -3px;
+
+}
+
+.litePurple-text {
+  color: #DDD6FE; 
+  font-size: 20px;
+  letter-spacing: -1px;
+
+}
+
+
+.window{
+
+    width: 550px;
+    height: 550px;
+}
+
+.actionSection{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 70px;
+    
+
+}
+
 
 #btnGenPassword{
-
     width: 191px;
     height: 42px;
-    
+    background-color: #7C3AED;
+    border-radius: 10px;
+    color: whitesmoke;
+    font-size: 12px;
+    font: bold;
+    border: none;
+    cursor: pointer;
 
 }
 
-#btnPasswordPlaceholder1{
 
-    width: 191px;
-    height: 42px;
-    
-
+/* hover effect */
+#btnGenPassword:hover {
+    background-color: #6D28D9;
+    transform: translateY(-2px); /* slight lift */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-#btnPasswordPlaceholder2{
+/* active (on clk) */
+#btnGenPassword:active {
+    background-color: #5B21B6; 
+    transform: translateY(0);  /* press down */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
 
-    width: 191px;
+
+#slider{
+    margin-left: 35px;
+    accent-color: #DDD6FE;
+}
+
+
+#slider-value{
+
+    margin-left: 5px;
+    color: #DDD6FE; 
+    font-size: 15px;
+}
+
+#btnPasswordPlaceholder1,
+#btnPasswordPlaceholder2 {
+    width: 211px;
     height: 42px;
-    
+    background-color: #DDD6FE; 
+    border-radius: 10px;
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease; /* smooth animation */
+}
 
+/* hover effect */
+#btnPasswordPlaceholder1:hover,
+#btnPasswordPlaceholder2:hover {
+    background-color: #C4B5FD; 
+    transform: translateY(-2px); /* subtle lift */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* active (on clk) */
+#btnPasswordPlaceholder1:active,
+#btnPasswordPlaceholder2:active {
+    background-color: #A78BFA; /* deeper purple */
+    transform: translateY(0);  /* press down */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
 }
 
 .container1{
 
     margin-bottom: 100px;
 }
+
+.container2{
+    display: flex;
+
+    border-top: 2px solid whitesmoke;
+    padding-top: 50px;
+    margin-top: 30px;
+    gap: 20px; /* adds space between buttons */
+}
+
+
