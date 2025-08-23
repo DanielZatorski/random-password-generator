@@ -12,7 +12,15 @@ body{
 
 }
 
-#btnPasswordPlaceholder{
+#btnPasswordPlaceholder1{
+
+    width: 191px;
+    height: 42px;
+    
+
+}
+
+#btnPasswordPlaceholder2{
 
     width: 191px;
     height: 42px;

@@ -5,4 +5,8 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
     
 
 
+let passSuggestion1 = document.getElementById("btnPasswordPlaceholder1")
+let passSuggestion2 = document.getElementById("btnPasswordPlaceholder2")
 
+console.log(passSuggestion1)
+console.log(passSuggestion2)
