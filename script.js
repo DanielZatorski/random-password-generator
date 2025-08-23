@@ -16,11 +16,14 @@ function generatePassword(){
     // based on resource
     //https://java2blog.com/fill-array-with-random-numbers-javascript/
 
-    const randomChars = Array.from(
+    const randomCharsPass1 = Array.from(
     { length: 15 }, // Specify lenfgth of charachters || total characters.length
     () => characters[Math.floor(Math.random() * characters.length)]
     );
-
+    const randomCharsPass2 = Array.from(
+    { length: 15 }, // Specify lenfgth of charachters || total characters.length
+    () => characters[Math.floor(Math.random() * characters.length)]
+    );
     //ALTERNATIVELY
     //let let randomChars = [];
     //for (let i = 0; i < characters.length; i++) {
@@ -28,16 +31,13 @@ function generatePassword(){
     //randomChars.push(characters[randomIndex]);
     //}
 
-
-
-    return console.log(randomChars.join(""))
-
+    passSuggestion1.textContent = randomCharsPass1.join("")
+    passSuggestion2.textContent = randomCharsPass2.join("")
 }
 
 
 
 
-generatePassword()
 
 
 
