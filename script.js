@@ -20,11 +20,11 @@ function generatePassword(){
     //https://java2blog.com/fill-array-with-random-numbers-javascript/
 
     const randomCharsPass1 = Array.from(
-    { length: 15 }, // Specify lenfgth of charachters || total characters.length
+    { length: currentValue }, // Specify lenfgth of charachters || total characters.length
     () => characters[Math.floor(Math.random() * characters.length)]
     );
     const randomCharsPass2 = Array.from(
-    { length: 15 }, // Specify lenfgth of charachters || total characters.length
+    { length: currentValue }, // Specify lenfgth of charachters || total characters.length
     () => characters[Math.floor(Math.random() * characters.length)]
     );
     //ALTERNATIVELY
@@ -44,13 +44,15 @@ function generatePassword(){
 
 const slider = document.getElementById("slider");
 const output = document.getElementById("slider-value");
+let currentValue = slider.value
 
 // update display when slider moves
 slider.addEventListener("input", function sliderValue() {
-    output.textContent = slider.value;
+    currentValue = slider.value;
+    output.textContent = currentValue;
+    console.log(currentValue)
 });  
         
-
 
 
 
